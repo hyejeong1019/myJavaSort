@@ -30,9 +30,10 @@ public class MergeSort extends Sort {
 		while (i <= mid) tempList[k++] = dataList[i++];
 		while (j <= end) tempList[k++] = dataList[j++];
 		
-		for (i = start, k = 0; k < tempList.length; i++, k++)
-			dataList[i] = tempList[k];
-		//System.arraycopy(dataList, start, tempList, 0, end-start+1);
+		//for (i = start, k = 0; k < tempList.length; i++, k++)
+		//	dataList[i] = tempList[k];
+		
+		System.arraycopy(tempList, 0, dataList, start, end-start+1);
 	}
 
 }

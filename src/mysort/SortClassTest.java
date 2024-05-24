@@ -11,6 +11,7 @@ public class SortClassTest {
 
 	public static void main(String[] args) {
 		int[] dataList = {5, 21, 14, 3, 31, 8, 27, 15};
+		//String[] dataList = {"abc", "ssssss", "wwerafd"};
 		sortData(dataList);
 	}
 	
